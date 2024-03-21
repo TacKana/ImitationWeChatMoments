@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  width: 100vw;
+}
+.header .baner {
+  background: url(/img/hrader.jpg) #ffd7d7 top no-repeat;
+  background-size: cover;
+}
+.header .baner .bg {
+  width: 430px;
+  height: 366px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.header .baner .bg img {
+  width: 74px;
+  height: 74px;
+  opacity: 1;
+  border-radius: 8px;
+  margin-bottom: -15px;
+  margin-right: 15px;
+}
+.content {
+  display: flex;
+}
+.content .arrange {
+  width: 374px;
+  opacity: 1;
+  display: flex;
+  margin: 72px 29px 3px;
+  flex-direction: column;
+}
+.content .arrange .user {
+  width: 125px;
+  height: 52px;
+  opacity: 1;
+  display: flex;
+}
+.content .arrange .user img {
+  width: 46px;
+  height: 46px;
+  border-radius: 3px;
+}
+.content .arrange .user p {
+  margin-left: 19px;
+  width: 60px;
+  height: 29px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.96px;
+  color: #606795;
+  text-align: left;
+  vertical-align: top;
+}
+.content .arrange .text {
+  width: 309px;
+  height: 330px;
+  opacity: 1;
+  margin-left: 65px;
+  margin-top: -25px;
+}
+.content .arrange .text p {
+  width: 309px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 28.96px;
+  color: #1e1d1f;
+  text-align: left;
+  vertical-align: top;
+}
+.content .arrange .text img {
+  width: 173px;
+  height: 232px;
+  margin-top: 5px;
+  opacity: 1;
+  background: #cccccc top no-repeat;
+}
+.content .arrange .text span p {
+  margin-top: 3px;
+  margin-left: 7px;
+  height: 24px;
+  opacity: 1;
+  /** 文本1 */
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 23.17px;
+  color: #b0b0b0;
+  text-align: left;
+  vertical-align: top;
+}
+.content .arrange .i {
+  height: 5px;
+  display: flex;
+  justify-content: end;
+}
+.content .arrange .i i {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+  margin-left: 4px;
+  background: #596b91;
+}
+img {
+  object-fit: cover;
+}

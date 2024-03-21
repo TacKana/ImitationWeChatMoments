@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XUXO主页</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="baner">
+            <div class="bg">
+                <img src="/img/logo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="arrange">
+            <div class="user">
+                <img src="/img/logo.jpg" alt="">
+                <p>你哈哈</p>
+            </div>
+            <div class="text">
+                <p>本网页由html5+css3手搓而来，采用flex布局，纯静态网页，仿微信朋友圈界面，用来练手的。</p>
+                <img src="/img/117068038_p0.jpg" alt="">
+                <span>
+                    <p>8分钟前</p>
+                </span>
+            </div>
+            <div class="i">
+                <i></i>
+                <i></i>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="content">
+        <div class="arrange">
+            <div class="user">
+                <img src="/img/logo.jpg" alt="">
+                <p>你哈哈</p>
+            </div>
+            <div class="text">
+                <p id="hitokoto_text">加载中......</p>
+                <img src="//www.dmoe.cc/random.php" alt="">
+                <span>
+                    <p>8分钟前</p>
+                </span>
+            </div>
+            <div class="i">
+                <i></i>
+                <i></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="arrange">
+            <div class="user">
+                <img src="/img/logo.jpg" alt="">
+                <p>你哈哈</p>
+            </div>
+            <div class="text">
+                <p id="hitokoto_text">加载中......</p>
+                <img src="//www.dmoe.cc/random.php" alt="">
+                <span>
+                    <p>8分钟前</p>
+                </span>
+            </div>
+            <div class="i">
+                <i></i>
+                <i></i>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="content">
+        <div class="arrange">
+            <div class="user">
+                <img src="/img/logo.jpg" alt="用户头像">
+                <p>你哈哈</p>
+            </div>
+            <div class="text">
+                <p id="hitokoto_text">加载中......</p>
+                <img src="//www.dmoe.cc/random.php" alt="">
+                <span>
+                    <p>8分钟前</p>
+                </span>
+            </div>
+            <div class="i">
+                <i></i>
+                <i></i>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- 一言 开始-->
+    <script>
+        fetch('//v1.hitokoto.cn')
+            .then(response => response.json())
+            .then(data => {
+                const hitokoto = document.querySelector('#hitokoto_text')
+                hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+                hitokoto.innerText = data.hitokoto
+            })
+            .catch(console.error)
+    </script>
+    <!-- 一言结束 -->
+</body>
+
+</html>
